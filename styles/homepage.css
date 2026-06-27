@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #0B0B0B;
+  --secondary-color: #1B3B6F;
+  --accent1-color: #FFC857;
+  --accent2-color: #F5F5F5;
+
+  --heading-font: "Orbitron", sans-serif;
+  --paragraph-font: "Roboto", Helvetica, sans-serif;
+
+  --headline-color-on-white: #0B0B0B;
+  --headline-color-on-color: #F5F5F5;
+  --paragraph-color-on-white: #0B0B0B;
+  --paragraph-color-on-color: #F5F5F5;
+  --paragraph-background-color: #1B3B6F;
+
+  --nav-link-color: #F5F5F5;
+  --nav-background-color: #0B0B0B;
+  --nav-hover-link-color: #0B0B0B;
+  --nav-hover-background-color: #FFC857;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  background-color: var(--primary-color);
+  color: var(--paragraph-color-on-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background-color: var(--nav-background-color);
+  border-bottom: 2px solid var(--accent1-color);
+}
+
+.logo {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  font-size: 1.4rem;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+.hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
+    url("../images/battlefront-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-family: var(--heading-font);
+  font-size: 4rem;
+  color: var(--accent1-color);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons a {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  padding: 12px 22px;
+  margin-right: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.buttons a:hover {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+}
+
+.love-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.love-section h2 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-color);
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background-color: #161616;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+.card h3 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  margin-bottom: 12px;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #aaa;
+  border-top: 1px solid var(--secondary-color);
+}
