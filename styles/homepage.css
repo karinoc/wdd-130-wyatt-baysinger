@@ -42,10 +42,10 @@ header {
   border-bottom: 2px solid var(--accent1-color);
 }
 
-.logo {
-  font-family: var(--heading-font);
-  color: var(--accent1-color);
-  font-size: 1.4rem;
+.logo-box img {
+  width: 120px;
+  height: auto;
+  display: block;
 }
 
 nav a {
